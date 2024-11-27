@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="text.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+    <title>Trafalgar Landing Page</title>
+    <style>
+        .nav-bar {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+        }
+    
+        #check,
+        .checkbtn {
+          display: none;
+          color: var(--header-black);
+          font-size: 1.5rem;
+        }
+    
+        .nav-bar ul {
+          display: flex;
+          gap: 1.25rem;
+          align-items: center;
+          justify-content: center;
+          list-style: none;
+        }
+    
+        @media screen and (max-width: 768px) {
+    
+          .nav-bar,
+          .header,
+          .section-1 {
+            width: 100%;
+          }
+    
+          .nav-bar ul {
+            position: fixed;
+            top: 5rem;
+            background: rgb(110, 110, 110);
+            font-size: 20px;
+            left: -100%;
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            transition: all .5s;
+            z-index: 99;
+            padding: 1.5em 0 1em 0;
+          }
+    
+          .checkbtn {
+            display: block;
+          }
+    
+          #check:checked~ul {
+            left: 0;
+          }
+    
+        }
+
+        @media screen and (max-width: 425px) {
+    
+    .nav-bar,
+    .header,
+    .section-1 {
+      width: 100%;
+    }
+
+    .nav-bar ul {
+      position: fixed;
+      top: 5rem;
+      background: rgba(110, 110, 110);
+      font-size: 20px;
+      left: -100%;
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      transition: all .5s;
+      z-index: 99;
+      padding: 1.5em 0 1em 0;
+    }
+
+    .checkbtn {
+      display: block;
+    }
+
+    #check:checked~ul {
+      left: 0;
+    }
+
+  }
+      </style>
+</head>
+<body>
+    <!-- navbar -->
+    
+    <nav class="nav-bar">
+        <input type="checkbox" id="check" name="check">
+        <div class="logo">
+          <img src="./images/logo.png" alt="">
+        </div>
+        <ul>
+          <li><a href="#r1" class="my-home" style="color: rgba(31, 21, 52, 1);">Home</a></li>
+          <li><a href="#r3"  style="color: rgba(31, 21, 52, 1);">Find a doctor </a></li>
+          <li><a href="#r4"  style="color: rgba(31, 21, 52, 1);">Apps</a></li>
+          <li><a href="#r5"  style="color: rgba(31, 21, 52, 1);">Testimonials</a></li>
+          <li><a href="#r2"  style="color: rgba(31, 21, 52, 1);">About Us</a></li>
+        </ul>
+        <label for="check" class="checkbtn">
+          <img src="./images/menu_24dp_F3F3F3_FILL0_wght400_GRAD0_opsz24.png" alt="">
+        </label>
+      </nav>
+
+    <!-- page-1 -->
+    <div class="page-1">
+        <section class="page-1-section">
+            <article style="display: block;">
+                <h1 id="r1">Virtual healthcare<br> for you</h1>
+            <p>Trafalgar provides progressive, and affordable<br> healthcare, accessible on mobile and online<br> for everyone</p>
+            <button class="page-1-button">
+                <a href="#" style="color: white;">Consult today</a>
+            </button>
+            </article>
+        </section>
+        <picture>
+            <img src="./images/trafalgar-header illustration 1.png" alt="image" class="page-1-image">
+        </picture>
+    </div>
+
+    <!-- page-2 -->
+    <div class="page-2">
+        <div class="page-2-div-1">
+            <h2 id="r2">Our services <br>
+            <span><img src="./images/Rectangle 12.png" alt="dash"></span></h2>
+            <p>We provide to you the best choiches for you. Adjust it to your health needs and make sure your undergo treatment<br> with our highly qualified doctors you can consult with us which type of service is suitable for your health</p>
+        </div>
+        <div class="page-2-div-2">
+            <section>
+                <picture>
+                    <img src="./images/search.png" alt="search icon">
+                </picture>
+                <h4>Search doctor</h4>
+                <p>Choose your doctor from thousands<br> of specialist, general, and trusted<br> hospitals</p>
+            </section>
+            <section>
+                <picture>
+                    <img src="./images/drugcontainer.png" alt="image">
+                </picture>
+                <h4>Online pharmacy</h4>
+                <p>Buy your medicines with our <br> mobile application with a simple <br> delivery system</p>
+            </section>
+            <section>
+                <picture>
+                    <img src="./images/phone.png" alt="image">
+                </picture>
+                <h4>Consultation</h4>
+                <p>Free consultation with our trusted <br> doctors and get the best <br> recomendations</p>
+            </section>
+        </div>
+        <div class="page-2-div-3">
+            <section>
+                <picture>
+                    <img src="./images/details.png" alt="image">
+                </picture>
+                <h4>Details info</h4>
+                <p>Free consultation with our trusted <br> doctors and get the best <br> recomendations</p>
+            </section>
+            <section>
+                <picture>
+                    <img src="./images/FAkit.png" alt="image">
+                </picture>
+                <h4>Emergency care</h4>
+                <p>You can get 24/7 urgent care for <br> yourself or your children and your <br> lovely family</p>
+            </section>
+            <section>
+                <picture>
+                    <img src="./images/chat.png" alt="image">
+                </picture>
+                <h4>Tracking</h4>
+                <p>Track and save your medical history <br> and health data</p>
+            </section>
+        </div>
+        <div class="page-2-div-4">
+            <button>
+                <a href="">Learn more</a>
+            </button>
+        </div>
+    </div>
+
+    <!-- page-3 -->
+     <div class="page-3">
+        <picture>
+            <img src="./images/trafalgar-illustration sec02 1.png" alt="image" class="page-3-image">
+        </picture>
+        <section class="page-3-section">
+            <article style="display: block;">
+                <h2 id="r3">Leading healthcare providers <br>
+                    <span><img src="./images/Rectangle 12.png" alt="dash"></span>
+                </h2>
+            <p>Trafalgar provides progressive, and affordable <br> healthcare, accessible on mobile and online for <br>everyone. To us, it’s not just work. We take pride <br> in the solutions we deliver</p>
+            <button>
+                <a href="#">Learn more</a>
+            </button>
+            </article>
+        </section>
+     </div>
+
+     <!-- page-4 -->
+      <div class="page-4">
+        <section class="page-4-section">
+              <article style="display: block;">
+                <h2 id="r4">Download our mobile apps <br>
+                    <span><img src="./images/Rectangle 12.png" alt="dash"></span>
+                </h2>
+              <p>Our dedicated patient engagement app and <br> web portal allow you to access information <br> instantaneously (no tedeous form, long calls, <br> or administrative hassle) and securely </p>
+              <button>
+                <a href="#">Download  
+                    <img src="./images/Vector (3).png" alt="">
+                </a>
+              </button>
+              </article>
+        </section>
+        <picture>
+            <img src="./images/trafalgar-illustration sec03 1.png" alt="img" class="page-4-image">
+        </picture>
+      </div>
+
+      <!-- page-5 -->
+       <div class="page-5">
+        <h2 id="r5">What our customer are saying <br>
+            <span><img src="./images/Rectangle 17.png" alt="dash"></span>
+        </h2>
+        <div class="page-5-div-1">
+             <article>
+                <picture>
+                    <img src="./images/image 1.png" alt="image">
+                 </picture>
+                <div>
+                    <h4>Edward Newgate</h4>
+                <p>Founder Circle</p>
+                </div>
+             </article>
+             <p>“Our dedicated patient engagement app and <br> web portal allow you to access information <br> instantaneously (no tedeous form, long calls, <br> or administrative hassle) and securely”</p>
+        </div>
+       </div>
+       <div class="page-5-lower">
+        <div>
+            <img src="./images/left.png" alt="image">
+        </div>
+        <div>
+            <img src="./images/slider.png" alt="image">
+        </div>
+        <div>
+            <img src="./images/right.png" alt="image">
+        </div>
+       </div>
+
+       <!-- page-6 -->
+        <div class="page-6">
+            <h2>Check out our latest article <br>
+                <span><img src="./images/Rectangle 12.png" alt="dash"></span></h2>
+            <div>
+                <section>
+                    <picture>
+                        <img src="./images/injection.png" alt="image">
+                    </picture>
+                    <div>
+                        <h4>Disease detection, check <br> up in the laboratory</h4>
+                    <p>In this case, the role of the health<br> laboratory is very important to do<br> a disease detection...</p>
+                    <article>
+                        <a href="#">Read more 
+                            <img src="./images/Frame (7).png" alt="">
+                        </a>
+                    </article>
+                    </div>
+                    
+                </section>
+                <section>
+                    <picture>
+                        <img src="./images/female.png" alt="image" style="border-radius: 20px 20px 0 0;">
+                    </picture>
+                    <div>
+                        <h4>Herbal medicines that are<br> safe for consumption</h4>
+                    <p>Herbal medicine is very widely used<br> at this time because of its very good<br> for your health...</p>
+                    <article>
+                        <a href="#">Read more 
+                            <img src="./images/Frame (7).png" alt="">
+                        </a>
+                    </article>
+                    </div>                   
+                </section>
+                <section>
+                    <picture>
+                        <img src="./images/mask.png" alt="image">
+                    </picture>
+                    <div>
+                        <h4>Natural care for healthy <br> facial skin</h4>
+                    <p>A healthy lifestyle should start from <br> now and also for your skin health. <br> There are some...</p>
+                     <article>
+                        <a href="#">Read more 
+                            <img src="./images/Frame (7).png" alt="">
+                        </a>
+                    </article>
+                    </div>                  
+                </section>
+            </div>
+            <article>
+                <button>
+                    <a href="#" style=" color: rgba(69, 143, 246, 1);">View all</a>
+                </button>
+            </article>
+        </div>
+
+        <!-- page-7 -->
+         <footer>
+            <div>
+                <picture>
+                    <img src="./images/logo.png" alt="logo">
+                </picture>
+                <br><br>
+                <p>Trafalgar provides progressive, and affordable <br> healthcare, accessible on mobile and online <br> for everyone</p>
+                <br><br>
+                <p>©Trafalgar PTY LTD 2020. All rights reserved</p>
+            </div>
+            <div>
+                <h4>Company</h4><br>
+                <article>
+                    <a href="#">About</a><br>
+                    <a href="#">Testimonials</a><br>
+                    <a href="#">Find a doctor</a><br>
+                    <a href="#">App</a>
+                </article>
+            </div>
+            <div>
+                <h4>Region</h4><br>
+                <article>
+                    <a href="#">Indonesia</a><br>
+                    <a href="#">Singapore</a><br>
+                    <a href="#">Hongkong</a><br>
+                    <a href="#">Canada</a>
+                </article>
+            </div>
+            <div>
+                <h4>Help</h4><br>
+                <article>
+                    <a href="#">Help center</a><br>
+                    <a href="#">Contact support</a><br>
+                    <a href="#">Instructions</a><br>
+                    <a href="#">How it works</a>
+                </article>
+            </div>
+         </footer>
+</body>
+</html>
